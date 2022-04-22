@@ -10,6 +10,34 @@
 
 <body>
     <h1>Learning indexDB</h1>
+
+    <hr>
+
+    <h2>Add / Update thing</h2>
+    <label for="key">Key:</label>
+    <input type="text" id="key" placeholder="key with 3 digits">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="write a random name">
+    <button onclick="onAddThing()">add</button>
+    <button onclick="onUpdateThings()">update</button>
+
+    <hr>
+
+    <h2>Find a thing</h2>
+    <input type="text" id="find" placeholder="find a thing">
+    <button onclick="onGetThing()">Find</button>
+    <h1 id="thing-found">---</h1>
+
+    <hr>
+
+    <h2>Get all things</h2>
+    <button onclick="onGetThings()">Find All</button>
+    <ul id="list"></ul>
+
+    <h2>Remove thing</h2>
+    <input type="text" id="remove-thing-key" placeholder="remove thing key">
+    <button onclick="onRemoveThing()">Remove</button>
+
 </body>
 <script src="./script.js"></script>
 
